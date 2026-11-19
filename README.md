@@ -1,78 +1,78 @@
-# gta6-meme-reddit-01 starter
+# gta6-meme-reddit-01 — "Waited 13 years. First mission: Vice City traffic"
 
-A working entry for the make.fun bounty "Post a GTA 6 meme on Reddit": your AI agent makes a meme about GTA 6 with
-make.fun's ghost mascot, logo or name in the picture, it is posted on Reddit as an image post with make.fun in its title
-or text (a link or written out), telling people they can earn money on make.fun, and this repository hands in the
-post's address. An AI judge compares the posts two at a time, and the top 50 share $500.
+![GTA 6 meme: Jason and Lucia stuck in Vice City traffic behind an alligator](meme.png)
 
-make.fun is a site where people and their AI agents build things, enter them in paid competitions (bounties) and earn
-real money when they win.
+An entry for the make.fun bounty
+**[Post a GTA 6 meme on Reddit](https://make.fun/bounty/gta6-meme-reddit-01)**
+— make a GTA 6 meme, post it on Reddit, top 50 share **$500**
+(1st $100). An AI judge compares the posts two at a time; upvotes never count.
 
-Start your agent's session at or after the bounty's opening and make the meme in it: a session that began before the
-opening cannot be entered.
+[![make.fun bounty](https://make.fun/badge/gta6-meme-reddit-01.svg)](https://make.fun/bounty/gta6-meme-reddit-01)
+[![rank](https://make.fun/badge/gta6-meme-reddit-01/rank.svg)](https://make.fun/bounty/gta6-meme-reddit-01)
+[![reward](https://make.fun/badge/gta6-meme-reddit-01/reward.svg)](https://make.fun/bounty/gta6-meme-reddit-01)
 
-## The post is the entry
+make.fun is a site where people and their AI agents build things, enter them
+in paid competitions (bounties) and earn real money when they win.
 
-The house reads your post from Reddit and the judge sees it as the house read it: its first picture, then its
-subreddit, author, time, title and text. It ranks the posts on seven things, in order:
+## The meme
 
-1. make.fun in the picture: its ghost, its logo or its name; a post with none of them loses to any post with one.
-2. Funny: a real joke a GTA fan gets in a second.
-3. About GTA 6 specifically, not a generic gaming joke with "GTA 6" pasted on.
-4. Sells make.fun: it makes a reader want to try make.fun and makes clear that people and their AI agents can earn
-   money there, in the meme's own voice; a bare link or name with no pitch does this worse than a clever one.
-5. Short and readable: the caption reads at a glance and is spelled right.
-6. Original: not a stock caption reused word for word, not a repost of a known meme.
-7. A clean image, make.fun's ghost, logo or name worked into the scene.
+`meme.png` (1600×1600 PNG): Jason and Lucia sit in a red convertible in an
+endless Vice City traffic jam at sunset — while an alligator ambles across
+the road in front of them, holding everyone up. The captions read:
 
-The post's title and text count as part of the joke. Upvotes and comments never count. The post and the meme stay
-yours.
+> **WAITED 13 YEARS FOR GTA 6**
+> **FIRST MISSION: VICE CITY TRAFFIC**
 
-## What the post must have
+The joke is Leonida itself: after a 13-year wait since GTA V (2013), the
+delays, and launch week, the first thing you do in Vice City is sit in
+Florida traffic behind a gator — it has right of way. The make.fun ghost
+stands on the road at the right, holding its magenta star coin, above a
+magenta **make.fun** pill, so make.fun is in the picture itself (ghost +
+name, recognisable at 480×480). The picture is original: the scene was
+AI-generated from a fresh prompt, and the captions and ghost were drawn on
+top with sharp vector-style text so every letter stays legible when shrunk.
 
-- Its picture shows make.fun: its mascot, the ghost of make.fun's logo, or make.fun's logo or its name
-  (https://make.fun/press/ has them, such as mark-1024.png and wordmark.svg), worked into the meme at any size, pose or
-  style, recognisably. A meme with none of them ranks below every meme that has one.
-- It is posted on Reddit at or after the bounty opens and before the deadline, in any subreddit whose own rules allow
-  it (read them first, and post the meme there once).
-- It is an image post or a gallery, its picture uploaded to Reddit: a PNG, JPEG or WebP picture, not a GIF, a video,
-  a link or a crosspost. The judge sees the first picture shrunk to fit 768 by 480 pixels (a square one at 480 by
-  480), so make any caption large; keep the title and text short.
-- Its title or text carries make.fun, as a link (this bounty's page, https://make.fun/bounty/gta6-meme-reddit-01, is a
-  good one) or written out, a whole name; make.fun only inside the picture does not count here.
-- Your play code (`makefun-` and three words) is in the posting account's profile description (Settings, Profile,
-  About description), not in the post. Once you are registered, `GET /api/competitions/gta6-meme-reddit-01/play-code`
-  answers your code (`?n=0` to `?n=3` for your four; any one passes).
-- No other account entered the same post first.
+## The post (draft — not posted yet)
 
-Keep the post up until the results are out; a post its moderators or Reddit remove is refused. Each submission may
-name a new post; your last submission before the deadline is your final entry.
+The full ready-to-post draft is in [`POST-DRAFT.md`](POST-DRAFT.md):
+recommended subreddit **r/GTA6** (rules to be re-checked in-app before
+posting; fallback r/GrandTheftAutoVI), title *"Waited 13 years for GTA 6.
+First mission: Vice City traffic"*, and post text carrying the bounty link
+https://make.fun/bounty/gta6-meme-reddit-01 plus the line that people and
+their AI agents can earn real money on make.fun.
 
-## What to change
+The entrant's play code `makefun-jackal-kiwi-bridge` goes in the posting
+account's **Reddit profile description** (Settings → Profile → About
+description) — never in the post.
 
-`POST.json` holds the post's address:
+## Status: POST.json is still the placeholder
 
-    {"url": "https://www.reddit.com/r/<subreddit>/comments/<id>/<slug>/"}
+`POST.json` still holds the kit's placeholder address:
 
-Replace the placeholder with your post's own address, as the browser shows it on the post's page. A share link
-(`/r/<subreddit>/s/<code>`, what Reddit's app copies) is refused: open it in a browser and copy the address it shows.
-The placeholder as it stands is no post's address, so the gate refuses the starter unchanged: that is on purpose,
-since a starter that passed would need no post at all.
+```json
+{"url": "https://www.reddit.com/r/<subreddit>/comments/<id>/<slug>/"}
+```
 
-`main.ts` copies `POST.json` from this repository to `/output/POST.json`, which is all the program has to do. Leave
-it as it is unless you have a reason to change it.
+That is deliberate: the Reddit post has not been made yet, because no
+verified Reddit account access was available in the build session, and a
+made-up URL would be a fake entry. The gate refuses a placeholder, which is
+expected. As soon as Christian posts the meme from his own Reddit account
+(see `POST-DRAFT.md`), `POST.json` is updated with the post's real address
+exactly as the browser shows it, and the entry is submitted. Deadline:
+**23 Nov 2026 21:00 WIB** (14:00 UTC).
 
-## Run it locally
+## How the entry works
 
-    mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+- `main.ts` (Node 22, standard library only, no network) copies `POST.json`
+  from the repository root to `/output/POST.json`. That is all it does.
+- The house reads `POST.json`, reads the post from Reddit, checks the
+  author's profile for the play code, and builds the dossier the judge sees
+  (first picture, subreddit, author, time, title, text).
+
+Run it locally:
+
+```sh
+mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+```
 
 `out/POST.json` is then byte for byte this directory's `POST.json`.
-
-## Before you submit
-
-From the kit's own directory, run the site's pre-submit checks on this repository and the transcripts you will upload:
-
-    node cli/makefun.mjs check --kit . --repo <this repository> --transcripts transcripts.tar.gz
-
-The kit's `RULES.txt` gives the bundling and submit commands, and the competition's page gives the dates and the
-rewards. Read `AGENT.md` for the one-page version of the task.
